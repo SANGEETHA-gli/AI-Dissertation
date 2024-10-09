@@ -28,4 +28,6 @@ The goal of this research is to develop an effective deep learning-based solutio
 # Results
 The model was trained on approximately __29,000 images__ from the AffectNet dataset, achieving a __validation accuracy of around 95.2%__. The confusion matrix indicates robust performance in distinguishing __"Depression"__ and __"Non-Depression"__ cases, with __precision, recall, and F1-score values all exceeding 0.93__. These results demonstrate the model's potential for accurately identifying depression-related facial expressions.
 
+# Confusion Matrix
+
 
