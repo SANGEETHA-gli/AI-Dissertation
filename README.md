@@ -8,7 +8,7 @@ The goal of this research is to develop an effective deep learning-based solutio
 
 * __Feature Extraction:__ Uses __MobileNetV2__ and __ResNet50__, two state-of-the-art CNNs pretrained on large image datasets, to extract high-level spatial features from facial images.
 * __Attention Mechanism:__ Incorporates an attention-based transformer block to capture temporal patterns and relevant features from the extracted spatial information, enhancing the model's ability to focus on important facial regions.
-* __Binary Classification:__ The system is designed for __binary classification__, where the outputs indicate the likelihood of __"Depression"__ or __"Non-Depression"__ based on the analyzed facial expressions.#
+* __Binary Classification:__ The system is designed for __binary classification__, where the outputs indicate the likelihood of __"Depression"__ or __"Non-Depression"__ based on the analyzed facial expressions.
 
 
 # Key Features
