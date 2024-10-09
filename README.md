@@ -32,6 +32,6 @@ The model was trained on approximately __29,000 images__ from the AffectNet data
 |                                   |  __Predicted: Non-Depression__ |   __Predicted: Depression__    |
 | --------------------------------- | ------------------------------ | ------------------------------ |
 |__Actual: Non-Depression__         | 5005                           | 184                            | 
-|__Actual:Depression__              | 462                            | 4679                           |
+|__Actual: Depression__             | 462                            | 4679                           |
 
 
