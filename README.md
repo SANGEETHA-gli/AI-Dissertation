@@ -8,4 +8,24 @@ The goal of this research is to develop an effective deep learning-based solutio
 
 * __Feature Extraction:__ Uses __MobileNetV2__ and __ResNet50__, two state-of-the-art CNNs pretrained on large image datasets, to extract high-level spatial features from facial images.
 * __Attention Mechanism:__ Incorporates an attention-based transformer block to capture temporal patterns and relevant features from the extracted spatial information, enhancing the model's ability to focus on important facial regions.
-* __Binary Classification:__ The system is designed for __binary classification__, where the outputs indicate the likelihood of __"Depression"__ or __"Non-Depression"__ based on the analyzed facial expressions.
+* __Binary Classification:__ The system is designed for __binary classification__, where the outputs indicate the likelihood of __"Depression"__ or __"Non-Depression"__ based on the analyzed facial expressions.#
+
+
+# Key Features
+
+* __Hybrid Deep Learning Approach:__ Combines the power of CNNs for spatial feature extraction with transformer-based attention for temporal analysis.
+* __Attention Mechanisms:__ Utilizes self-attention to enhance the focus on relevant facial features.
+* __Facial Expression Analysis:__ Trained using the __AffectNet dataset__, focusing on identifying depression-related facial patterns from a diverse set of __29,000 images__.
+* __Real-Time Video Monitoring:__ The framework can be extended to support real-time depression detection using a webcam or video feed.
+* __End-to-End Training Pipeline:__ Includes data preprocessing, feature extraction, attention mechanism integration, and model evaluation.
+
+# Usage
+* __Training:__ Follow the provided scripts to preprocess the data and train the model. Adjust parameters in the configuration file as needed.
+* __Testing:__ Test the trained model on new images or datasets to evaluate its depression detection accuracy.
+* __Real-Time Monitoring:__ The framework can be extended for real-time video analysis using a webcam to detect signs of depression continuously.
+
+
+# Results
+The model was trained on approximately __29,000 images__ from the AffectNet dataset, achieving a __validation accuracy of around 95.2%__. The confusion matrix indicates robust performance in distinguishing __"Depression"__ and __"Non-Depression"__ cases, with __precision, recall, and F1-score values all exceeding 0.93__. These results demonstrate the model's potential for accurately identifying depression-related facial expressions.
+
+
