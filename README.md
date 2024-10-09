@@ -34,4 +34,11 @@ The model was trained on approximately __29,000 images__ from the AffectNet data
 |__Actual: Non-Depression__         | 5005                           | 184                            | 
 |__Actual: Depression__             | 462                            | 4679                           |
 
+# Future Work
+The framework can be further enhanced by:
+S
+* __Improving real-time performance__ for more efficient video analysis.
+* __Incorporating more complex temporal modeling techniques__, such as recurrent neural networks (RNNs) or expanding the use of transformer architectures.
+* __Expanding the dataset size__ for fine-tuning or transfer learning on a larger set of facial expression data to enhance generalization.
+
 
