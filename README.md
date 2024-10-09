@@ -42,7 +42,7 @@ S
 * __Expanding the dataset size__ for fine-tuning or transfer learning on a larger set of facial expression data to enhance generalization.
 
 # References
-* [Affectnet Dataset](
+* [Affectnet Dataset](https://www.kaggle.com/datasets/noamsegal/affectnet-training-data)
 
 
 
