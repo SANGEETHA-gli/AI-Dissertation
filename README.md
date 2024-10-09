@@ -41,4 +41,8 @@ S
 * __Incorporating more complex temporal modeling techniques__, such as recurrent neural networks (RNNs) or expanding the use of transformer architectures.
 * __Expanding the dataset size__ for fine-tuning or transfer learning on a larger set of facial expression data to enhance generalization.
 
+# References
+* [Affectnet Dataset](
+
+
 
