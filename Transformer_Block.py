@@ -15,20 +15,20 @@ class TransformerBlock(layers.Layer):
         self.dropout2 = layers.Dropout(rate)
 
     def call(self, inputs, training=False):
-        # Cast the inputs to float32 to ensure compatibility with attention output
+        
         inputs = tf.cast(inputs, dtype=tf.float32)
         
         attn_output = self.att(inputs, inputs)
         attn_output = self.dropout1(attn_output, training=training)
         
-        # Add residual connection and apply LayerNorm
+        
         out1 = self.layernorm1(inputs + attn_output)
 
-        # Feed-forward network
+
         ffn_output = self.ffn(out1)
         ffn_output = self.dropout2(ffn_output, training=training)
         
-        # Add residual connection and apply LayerNorm
+       
         return self.layernorm2(out1 + ffn_output)
 
     def get_config(self):
