@@ -21,7 +21,7 @@ converter.target_spec.supported_ops = [
 
 tflite_model = converter.convert()
 
-# Save the TFLite model to a .tflite file
+
 TFLITE_MODEL_PATH = r'C:\Users\dsang\OneDrive\Desktop\mindwell_backend\mindwell_backend\models\models\hybrid_mobilenet_resnet_model_dup.tflite'
 with open(TFLITE_MODEL_PATH, 'wb') as f:
     f.write(tflite_model)
