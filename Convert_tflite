@@ -1,11 +1,10 @@
 import tensorflow as tf
 from transformer_block import TransformerBlock
-from attention_block import attention_block  # Import your custom layers
+from attention_block import attention_block  
 
-# Path to your saved Keras model in .h5 format
 H5_MODEL_PATH = r'C:\Users\dsang\OneDrive\Desktop\mindwell_backend\mindwell_backend\models\models\hybrid_mobilenet_resnet_model_dup.h5'
 
-# Load the .h5 model
+
 model = tf.keras.models.load_model(
     H5_MODEL_PATH, 
     custom_objects={'TransformerBlock': TransformerBlock, 'attention_block': attention_block}
@@ -16,8 +15,8 @@ converter = tf.lite.TFLiteConverter.from_keras_model(model)
 
 # Enable Flex ops
 converter.target_spec.supported_ops = [
-    tf.lite.OpsSet.TFLITE_BUILTINS,  # TensorFlow Lite built-in ops.
-    tf.lite.OpsSet.SELECT_TF_OPS      # Enable TensorFlow ops.
+    tf.lite.OpsSet.TFLITE_BUILTINS,  
+    tf.lite.OpsSet.SELECT_TF_OPS      
 ]
 
 tflite_model = converter.convert()
